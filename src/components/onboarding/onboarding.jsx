@@ -3,10 +3,13 @@ import './onboarding.css';
 import Welcome from '../welcome/welcome';
 import Signup from '../signup/signup';
 import Verification from '../verification/verification';
+import ImmigrationInfo from '../Immigrationinfo/Immigrationinfo';
+import Interests from '../Interests/Interests';
+import Password from '../password/password';
 import Chatbot from '../chatbot/chatbot';
 
 const ImmiHubOnboarding = () => {
-  const [step, setStep] = useState('welcome'); // welcome, signup, verification, chatbot
+  const [step, setStep] = useState('welcome'); // welcome, signup, verification, immigrationInfo, interests, password, chatbot
   const [formData, setFormData] = useState({
     phoneNo: '+1 | 551-580-2970',
     email: 'nashvallapu@gmail.com',
@@ -16,6 +19,27 @@ const ImmiHubOnboarding = () => {
   const [otp, setOtp] = useState(['5', '4', '5', '0', '5', '5']);
   const [keepSignedIn, setKeepSignedIn] = useState(true);
   const [timer, setTimer] = useState(45);
+  
+  // Immigration Info states
+  const [documents, setDocuments] = useState({
+    i797: false,
+    passport: true,
+    i94: false,
+    h1bVisaStamp: true
+  });
+  const [deadlines, setDeadlines] = useState({
+    h1bStartDate: '',
+    h1bExpiryDate: '',
+    i94ExpiryDate: '',
+    passportExpiryDate: ''
+  });
+  
+  // Interests states
+  const [selectedInterests, setSelectedInterests] = useState([]);
+  
+  // Password states
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
   
   // Chatbot states
   const [messages, setMessages] = useState([]);
@@ -75,18 +99,62 @@ const ImmiHubOnboarding = () => {
     } else if (step === 'signup') {
       setStep('verification');
     } else if (step === 'verification') {
+      setStep('immigrationInfo');
+    } else if (step === 'immigrationInfo') {
+      setStep('interests');
+    } else if (step === 'interests') {
+      setStep('password');
+    } else if (step === 'password') {
       setStep('chatbot');
     }
   };
 
   const handleBack = () => {
     if (step === 'chatbot') {
+      setStep('password');
+    } else if (step === 'password') {
+      setStep('interests');
+    } else if (step === 'interests') {
+      setStep('immigrationInfo');
+    } else if (step === 'immigrationInfo') {
       setStep('verification');
     } else if (step === 'verification') {
       setStep('signup');
     } else if (step === 'signup') {
       setStep('welcome');
     }
+  };
+  
+  const handleUploadDocument = (docType) => {
+    setDocuments(prev => ({
+      ...prev,
+      [docType]: !prev[docType]
+    }));
+  };
+  
+  const handleDeadlineChange = (field, value) => {
+    setDeadlines(prev => ({
+      ...prev,
+      [field]: value
+    }));
+  };
+  
+  const handleInterestToggle = (interestId) => {
+    setSelectedInterests(prev => {
+      if (prev.includes(interestId)) {
+        return prev.filter(id => id !== interestId);
+      } else {
+        return [...prev, interestId];
+      }
+    });
+  };
+  
+  const handlePasswordChange = (value) => {
+    setPassword(value);
+  };
+  
+  const handleConfirmPasswordChange = (value) => {
+    setConfirmPassword(value);
   };
 
   const sendMessageToGemini = async (userMessage) => {
@@ -177,6 +245,40 @@ const ImmiHubOnboarding = () => {
           keepSignedIn={keepSignedIn}
           onKeepSignedInChange={setKeepSignedIn}
           timer={timer}
+          onNext={handleNext}
+          onBack={handleBack}
+        />
+      );
+    
+    case 'immigrationInfo':
+      return (
+        <ImmigrationInfo 
+          documents={documents}
+          onUploadDocument={handleUploadDocument}
+          deadlines={deadlines}
+          onDeadlineChange={handleDeadlineChange}
+          onNext={handleNext}
+          onBack={handleBack}
+        />
+      );
+    
+    case 'interests':
+      return (
+        <Interests 
+          selectedInterests={selectedInterests}
+          onInterestToggle={handleInterestToggle}
+          onNext={handleNext}
+          onBack={handleBack}
+        />
+      );
+    
+    case 'password':
+      return (
+        <Password 
+          password={password}
+          confirmPassword={confirmPassword}
+          onPasswordChange={handlePasswordChange}
+          onConfirmPasswordChange={handleConfirmPasswordChange}
           onNext={handleNext}
           onBack={handleBack}
         />
