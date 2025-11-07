@@ -55,7 +55,7 @@ const Interests = ({
 
         {/* Content Section */}
         <div className="mb-6">
-          <h2 className="text-2xl font-bold text-gray-900 mb-3">
+          <h2 className="text-md font-bold text-gray-900 mb-3">
             Choose your current H-1B goals
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed mb-6">
@@ -68,7 +68,7 @@ const Interests = ({
               <button
                 key={interest.id}
                 onClick={() => onInterestToggle(interest.id)}
-                className={`relative border-2 rounded-xl p-4 text-left min-h-[100px] flex items-center transition-all ${
+                className={`relative border-2 rounded-xl p-2 text-left flex items-center transition-all ${
                   selectedInterests.includes(interest.id)
                     ? 'border-blue-500 bg-blue-50'
                     : 'border-gray-300 bg-white hover:border-blue-300'
@@ -80,7 +80,7 @@ const Interests = ({
                 
                 {/* Checkbox Icon */}
                 <div className="absolute top-4 right-4">
-                  <div className={`w-6 h-6 rounded border-2 flex items-center justify-center transition-all ${
+                  <div className={`w-4 h-4 rounded border-2 flex items-center justify-center transition-all ${
                     selectedInterests.includes(interest.id)
                       ? 'border-blue-500 bg-blue-500'
                       : 'border-gray-400 bg-white'
@@ -100,7 +100,7 @@ const Interests = ({
         {/* Next Button */}
         <button
           onClick={onNext}
-          className="w-full bg-blue-500 text-white text-lg font-semibold py-3.5 rounded-full shadow-lg mb-6 hover:bg-blue-600 transition-colors"
+          className="w-full bg-blue-500 text-white text-sm font-semibold py-1.5 rounded-full shadow-lg mb-6 hover:bg-blue-600 transition-colors"
         >
           Next
         </button>

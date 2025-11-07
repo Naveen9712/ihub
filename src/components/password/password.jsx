@@ -43,34 +43,34 @@ const Password = ({
         </div>
 
         {/* Content Section */}
-        <div className="mb-6">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8">
+        <div className="mb-6 content-section">
+          <h2 className="password-heading font-semibold text-gray-900 mb-8">
             Choose a New Password Below
           </h2>
 
           {/* Password Input */}
           <div className="mb-6 relative">
-            <label className="absolute left-4 -top-2.5 bg-gray-100 px-2 text-blue-500 text-sm font-medium z-10">
+            <label className="absolute left-4 -top-2.5 bg-gray-100 px-2 text-blue-500 text-sm font-medium z-10 rounded">
               Password
             </label>
             <input
               type="password"
               value={password}
               onChange={(e) => onPasswordChange(e.target.value)}
-              className="w-full border-2 border-blue-500 rounded-full px-5 py-3.5 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-blue-600 bg-white"
+              className="w-full border-2 border-blue-500 rounded-full px-5 py-2.5 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-blue-600 bg-white"
             />
           </div>
 
           {/* Re-Enter Password Input */}
           <div className="mb-6 relative">
-            <label className="absolute left-4 -top-2.5 bg-gray-100 px-2 text-blue-500 text-sm font-medium z-10">
+            <label className="absolute left-4 -top-2.5 bg-gray-100 px-2 text-blue-500 text-sm font-medium z-10 rounded">
               Re-Enter Password
             </label>
             <input
               type="password"
               value={confirmPassword}
               onChange={(e) => onConfirmPasswordChange(e.target.value)}
-              className="w-full border-2 border-blue-500 rounded-full px-5 py-3.5 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-blue-600 bg-white"
+              className="w-full border-2 border-blue-500 rounded-full px-5 py-2.5 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-blue-600 bg-white"
             />
           </div>
         </div>
@@ -78,7 +78,7 @@ const Password = ({
         {/* Next Button */}
         <button
           onClick={onNext}
-          className="w-full bg-blue-500 text-white text-lg font-semibold py-3.5 rounded-full shadow-lg mb-6 hover:bg-blue-600 transition-colors"
+          className="w-full bg-blue-500 text-white text-sm font-semibold py-3 rounded-full shadow-lg mb-6 hover:bg-blue-600 transition-colors"
         >
           Next
         </button>

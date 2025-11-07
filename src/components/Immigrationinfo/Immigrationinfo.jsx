@@ -25,7 +25,7 @@ const ImmigrationInfo = ({
       <div className="w-full max-w-[380px] min-h-screen overflow-y-auto px-4 py-4">
         {/* Header */}
         <div className="text-center mb-6">
-          <h1 className="text-2xl font-semibold text-blue-500 mb-4">Sign up</h1>
+          <h1 className="text-1.5xl font-semibold text-blue-500 mb-4">Sign up</h1>
           
           {/* Progress Bar */}
           <div className="relative mb-2">
@@ -44,15 +44,15 @@ const ImmigrationInfo = ({
 
         {/* Upload Section */}
         <div className="bg-white rounded-2xl shadow-lg p-6 mb-6">
-          <h2 className="text-xl font-bold text-gray-900 mb-6">
+          <h2 className="text-sm font-bold text-gray-900 mb-6">
             Upload Securely - Encrypted on Azure Cloud
           </h2>
 
           {/* Document Upload Grid */}
-          <div className="grid grid-cols-2 gap-4 mb-6">
+          <div className="grid grid-cols-2 gap-3 mb-6">
             {/* I-797 Document */}
-            <div className="border-2 border-dashed border-gray-300 rounded-xl p-4 flex flex-col items-center justify-center min-h-[140px]">
-              <svg className="w-12 h-12 text-gray-400 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="border-2 border-dashed border-gray-300 rounded-xl p-2 flex flex-col items-center justify-center">
+              <svg className="w-6 h-6 text-gray-400 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
               </svg>
               <p className="text-sm font-medium text-gray-700 text-center mb-1">I-797 Document</p>
@@ -68,8 +68,8 @@ const ImmigrationInfo = ({
             </div>
 
             {/* Passport Bio Page */}
-            <div className="border-2 border-dashed border-gray-300 rounded-xl p-4 flex flex-col items-center justify-center min-h-[140px]">
-              <svg className="w-12 h-12 text-gray-400 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="border-2 border-dashed border-gray-300 rounded-xl p-2 flex flex-col items-center justify-center">
+              <svg className="w-6 h-6 text-gray-400 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
               </svg>
               <p className="text-sm font-medium text-gray-700 text-center mb-1">Passport Bio Page</p>
@@ -82,8 +82,8 @@ const ImmigrationInfo = ({
             </div>
 
             {/* Recent I-94 */}
-            <div className="border-2 border-dashed border-gray-300 rounded-xl p-4 flex flex-col items-center justify-center min-h-[140px]">
-              <svg className="w-12 h-12 text-gray-400 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="border-2 border-dashed border-gray-300 rounded-xl p-2 flex flex-col items-center justify-center">
+              <svg className="w-6 h-6 text-gray-400 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
               </svg>
               <p className="text-sm font-medium text-gray-700 text-center mb-1">Recent I-94</p>
@@ -99,8 +99,8 @@ const ImmigrationInfo = ({
             </div>
 
             {/* H1B Visa Stamp */}
-            <div className="border-2 border-dashed border-gray-300 rounded-xl p-4 flex flex-col items-center justify-center min-h-[140px]">
-              <svg className="w-12 h-12 text-gray-400 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="border-2 border-dashed border-gray-300 rounded-xl p-2 flex flex-col items-center justify-center">
+              <svg className="w-6 h-6 text-gray-400 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
               </svg>
               <p className="text-sm font-medium text-gray-700 text-center mb-1">H1B Visa Stamp (Passport)</p>
@@ -116,7 +116,7 @@ const ImmigrationInfo = ({
 
         {/* Deadlines Section */}
         <div className="bg-white rounded-2xl shadow-lg p-6 mb-6">
-          <h2 className="text-xl font-bold text-gray-900 mb-6">
+          <h2 className="text-sm font-bold text-gray-900 mb-6">
             Important Deadlines for Alerts
           </h2>
 
@@ -124,7 +124,7 @@ const ImmigrationInfo = ({
           <div className="grid grid-cols-2 gap-4">
             {/* H1B Start Date */}
             <div className="relative">
-              <label className="absolute left-4 -top-2.5 bg-white px-2 text-blue-500 text-xs font-medium z-10">
+              <label className="absolute left-4 -top-2.5 bg-white px-1 text-blue-500 text-xs font-medium z-10">
                 H1B Start Date
               </label>
               <div className="relative">
@@ -133,7 +133,7 @@ const ImmigrationInfo = ({
                   placeholder="mm/dd/yyyy"
                   value={deadlines.h1bStartDate}
                   onChange={(e) => onDeadlineChange('h1bStartDate', e.target.value)}
-                  className="w-full border-2 border-blue-500 rounded-full px-4 py-2.5 text-gray-700 placeholder-gray-400 focus:outline-none focus:border-blue-600 pr-10"
+                  className="w-full border-2 border-blue-500 rounded-full px-4 py-1.5 text-gray-700 placeholder-gray-400 focus:outline-none focus:border-blue-600 pr-10"
                 />
                 <svg className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -143,7 +143,7 @@ const ImmigrationInfo = ({
 
             {/* H1B Expiry Date */}
             <div className="relative">
-              <label className="absolute left-4 -top-2.5 bg-white px-2 text-blue-500 text-xs font-medium z-10">
+              <label className="absolute left-4 -top-2.5 bg-white px-1 text-blue-500 text-xs font-medium z-10">
                 H1B Expiry Date
               </label>
               <div className="relative">
@@ -152,7 +152,7 @@ const ImmigrationInfo = ({
                   placeholder="mm/dd/yyyy"
                   value={deadlines.h1bExpiryDate}
                   onChange={(e) => onDeadlineChange('h1bExpiryDate', e.target.value)}
-                  className="w-full border-2 border-blue-500 rounded-full px-4 py-2.5 text-gray-700 placeholder-gray-400 focus:outline-none focus:border-blue-600 pr-10"
+                  className="w-full border-2 border-blue-500 rounded-full px-4 py-1.5 text-gray-700 placeholder-gray-400 focus:outline-none focus:border-blue-600 pr-10"
                 />
                 <svg className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -162,7 +162,7 @@ const ImmigrationInfo = ({
 
             {/* I94 Expiry Date */}
             <div className="relative">
-              <label className="absolute left-4 -top-2.5 bg-white px-2 text-blue-500 text-xs font-medium z-10">
+              <label className="absolute left-4 -top-2.5 bg-white px-1 text-blue-500 text-xs font-medium z-10">
                 I94 Expiry Date
               </label>
               <div className="relative">
@@ -171,7 +171,7 @@ const ImmigrationInfo = ({
                   placeholder="mm/dd/yyyy"
                   value={deadlines.i94ExpiryDate}
                   onChange={(e) => onDeadlineChange('i94ExpiryDate', e.target.value)}
-                  className="w-full border-2 border-blue-500 rounded-full px-4 py-2.5 text-gray-700 placeholder-gray-400 focus:outline-none focus:border-blue-600 pr-10"
+                  className="w-full border-2 border-blue-500 rounded-full px-4 py-1.5 text-gray-700 placeholder-gray-400 focus:outline-none focus:border-blue-600 pr-10"
                 />
                 <svg className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -181,7 +181,7 @@ const ImmigrationInfo = ({
 
             {/* Passport Expiry Date */}
             <div className="relative">
-              <label className="absolute left-4 -top-2.5 bg-white px-2 text-blue-500 text-xs font-medium z-10">
+              <label className="absolute left-4 -top-2.5 bg-white px-1 text-blue-500 text-xs font-medium z-10">
                 Passport Expiry Date
               </label>
               <div className="relative">
@@ -190,7 +190,7 @@ const ImmigrationInfo = ({
                   placeholder="mm/dd/yyyy"
                   value={deadlines.passportExpiryDate}
                   onChange={(e) => onDeadlineChange('passportExpiryDate', e.target.value)}
-                  className="w-full border-2 border-blue-500 rounded-full px-4 py-2.5 text-gray-700 placeholder-gray-400 focus:outline-none focus:border-blue-600 pr-10"
+                  className="w-full border-2 border-blue-500 rounded-full px-4 py-1.5 text-gray-700 placeholder-gray-400 focus:outline-none focus:border-blue-600 pr-10"
                 />
                 <svg className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -203,7 +203,7 @@ const ImmigrationInfo = ({
         {/* Next Button */}
         <button
           onClick={onNext}
-          className="w-full bg-blue-500 text-white text-lg font-semibold py-3.5 rounded-full shadow-lg mb-6 hover:bg-blue-600 transition-colors"
+          className="w-full bg-blue-500 text-white text-sm font-semibold py-2 rounded-full shadow-lg mb-6 hover:bg-blue-600 transition-colors"
         >
           Next
         </button>
