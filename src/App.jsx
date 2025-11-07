@@ -1,4 +1,4 @@
-import ImmiHubOnboarding from './components/Immihubonboarding'
+import ImmiHubOnboarding from './components/onboarding/onboarding'
 
 function App() {
   return <ImmiHubOnboarding />

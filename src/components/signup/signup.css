@@ -1,0 +1,68 @@
+/* Signup Component Styles */
+
+.signup-container {
+  /* Container styles */
+}
+
+.signup-image {
+  /* Image styles */
+}
+
+.signup-form {
+  /* Form container styles */
+}
+
+.signup-title {
+  /* Form title styles */
+}
+
+.signup-field {
+  /* Form field wrapper */
+  margin-bottom: 0.25rem;
+}
+
+.signup-label {
+  /* Label styles */
+}
+
+.signup-input {
+  /* Input field styles */
+  transition: all 0.2s ease;
+}
+
+.signup-input:focus {
+  transform: scale(1.02);
+}
+
+.signup-select-wrapper {
+  /* Select wrapper styles */
+  position: relative;
+}
+
+.signup-select {
+  /* Select field styles */
+  transition: all 0.2s ease;
+}
+
+.signup-select:focus {
+  transform: scale(1.02);
+}
+
+.signup-button {
+  /* Button styles */
+  transition: all 0.3s ease;
+}
+
+.signup-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.signup-link {
+  /* Login link styles */
+  transition: color 0.2s ease;
+}
+
+.signup-link:hover {
+  color: #67e8f9;
+}

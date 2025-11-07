@@ -1,0 +1,87 @@
+/* Verification Component Styles */
+
+.verification-container {
+  /* Container styles */
+}
+
+.verification-image {
+  /* Image styles */
+}
+
+.verification-form h2 {
+  font-size: 1.2rem;
+}
+
+.verification-title {
+  /* Form title styles */
+}
+
+.verification-field {
+  /* Form field wrapper */
+}
+
+.verification-label {
+  /* Label styles */
+}
+
+.verification-input {
+  /* Input field styles */
+  transition: all 0.2s ease;
+}
+
+.verification-otp-container {
+  /* OTP input container */
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.verification-otp-input {
+  /* Individual OTP input styles */
+  transition: all 0.2s ease;
+}
+
+.verification-otp-input:focus {
+  transform: scale(1.1);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+.verification-otp-input.highlight {
+  /* Highlighted OTP input (last one) */
+  background-color: #fef08a;
+}
+
+.verification-timer {
+  /* Timer text styles */
+}
+
+.verification-checkbox-wrapper {
+  /* Checkbox wrapper styles */
+}
+
+.verification-checkbox {
+  /* Checkbox styles */
+}
+
+.verification-checkbox-label {
+  /* Checkbox label styles */
+}
+
+.verification-button {
+  /* Button styles */
+  transition: all 0.3s ease;
+}
+
+.verification-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.verification-link {
+  /* Alternative link styles */
+  transition: color 0.2s ease;
+}
+
+.verification-link:hover {
+  color: #67e8f9;
+}

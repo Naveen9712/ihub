@@ -1,0 +1,41 @@
+/* Welcome Component Styles */
+
+.welcome-container {
+  /* Container styles can be added here */
+}
+
+.welcome-image {
+  /* Image specific styles */
+}
+
+.welcome-content {
+  /* Content wrapper styles */
+}
+
+.welcome-title {
+  /* Title styles */
+}
+
+.welcome-description {
+  /* Description text styles */
+}
+
+.welcome-button {
+  /* Button styles */
+  transition: all 0.3s ease;
+}
+
+.welcome-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.welcome-link {
+  /* Login link styles */
+  transition: color 0.2s ease;
+}
+
+.welcome-link:hover {
+  color: #67e8f9;
+}
+
