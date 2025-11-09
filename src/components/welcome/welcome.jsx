@@ -3,8 +3,8 @@ import './welcome.css';
 
 const Welcome = ({ onNext }) => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="w-full max-w-[380px] min-h-screen bg-gradient-to-b from-blue-200 via-blue-300 to-blue-500 relative overflow-hidden">
+    <div className="fixed-layout-container bg-gradient-to-b from-blue-200 via-blue-300 to-blue-500 flex items-center justify-center bg-gray-100">
+      <div className="w-100 h-150 relative overflow-hidden">
         {/* Image */}
         <div className="flex items-center justify-center mt-8 px-6">
           <div className="w-full relative">
@@ -12,7 +12,6 @@ const Welcome = ({ onNext }) => {
               src="/images/immi-image2.png" 
               alt="ImmiHub"
               className="w-full h-auto rounded-lg object-cover"
-              style={{ height: '100%' }}
             />
           </div>
         </div>
@@ -31,7 +30,7 @@ const Welcome = ({ onNext }) => {
           {/* Join Button */}
           <button
             onClick={onNext}
-            className="w-full bg-white text-gray-900 text-sm font-semibold py-2.5 rounded-full shadow-lg mb-6 font-inter"
+            className="w-full bg-white text-gray-900 text-md font-semibold py-2.5 rounded-full shadow-lg mb-6 font-inter"
           >
             Join now
           </button>

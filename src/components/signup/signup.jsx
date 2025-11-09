@@ -3,7 +3,7 @@ import './signup.css';
 
 const Signup = ({ formData, onInputChange, onNext, onBack }) => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100 relative">
+    <div className="fixed-layout-container flex items-center justify-center bg-gray-100 relative">
       {/* Back Button - Positioned outside content container */}
       <button
         onClick={onBack}
@@ -14,7 +14,7 @@ const Signup = ({ formData, onInputChange, onNext, onBack }) => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
         </svg>
       </button>
-      <div className="w-full max-w-[380px] min-h-screen flex flex-col">
+      <div className="w-100 h-150 relative">
         {/* Image */}
         <div className="px-6 mt-4 mb-3 flex-shrink-0">
           <div className="w-85 h-55 relative flex items-center justify-center">
@@ -27,12 +27,10 @@ const Signup = ({ formData, onInputChange, onNext, onBack }) => {
           </div>
         </div>
 
-        {/* Spacer to push form to bottom */}
-        <div className="flex-1"></div>
 
         {/* Signup Form - Fixed to bottom */}
         <div className="flex-shrink-0">
-          <div className="bg-blue-400 px-6 py-2 shadow-xl">
+          <div className="bg-blue-400 px-6 py-6 signup-container">
             <h2 className="text-1.5xl font-semibold text-white text-center mb-2 font-poppins">Signup Form</h2>
 
             {/* Phone Number */}

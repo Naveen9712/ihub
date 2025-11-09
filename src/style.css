@@ -11,6 +11,11 @@ html, body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+  /* Prevent font scaling */
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 #app {
@@ -19,4 +24,36 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Fixed layout container for all pages */
+.fixed-layout-container {
+  width: 402px !important;
+  height: 874px !important;
+  max-width: 402px !important;
+  max-height: 874px !important;
+  min-width: 402px !important;
+  min-height: 874px !important;
+  overflow: hidden;
+  position: relative;
+  /* Prevent scaling */
+  transform: scale(1);
+  transform-origin: top center;
+}
+
+/* Prevent font scaling - ensure fonts remain constant */
+.fixed-layout-container {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* Prevent any scaling on child elements */
+.fixed-layout-container * {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }

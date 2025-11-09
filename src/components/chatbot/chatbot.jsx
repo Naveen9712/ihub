@@ -18,8 +18,8 @@ const Chatbot = ({
   }, [messages]);
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="w-full max-w-[380px] h-screen bg-gradient-to-b from-blue-50 to-blue-100 flex flex-col">
+    <div className="fixed-layout-container flex items-center justify-center bg-gray-100">
+      <div className="w-full h-full bg-gradient-to-b from-blue-50 to-blue-100 flex flex-col">
         {/* Header */}
         <div className="bg-blue-500 text-white px-6 py-6 shadow-lg relative">
           {/* Back Button */}

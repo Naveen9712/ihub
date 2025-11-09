@@ -3,7 +3,7 @@ import './verification.css';
 
 const Verification = ({ formData, otp, onOtpChange, keepSignedIn, onKeepSignedInChange, timer, onNext, onBack }) => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100 relative">
+    <div className="fixed-layout-container flex items-center justify-center bg-gray-100 relative">
       {/* Back Button - Positioned outside content container */}
       <button
         onClick={onBack}
@@ -14,7 +14,7 @@ const Verification = ({ formData, otp, onOtpChange, keepSignedIn, onKeepSignedIn
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
         </svg>
       </button>
-      <div className="w-full max-w-[380px] min-h-screen flex flex-col">
+      <div className="w-100 h-150 relative">
         {/* Image */}
         <div className="px-6 mt-4 mb-8 flex-shrink-0">
           <div className="w-85 h-55 relative">
@@ -32,7 +32,7 @@ const Verification = ({ formData, otp, onOtpChange, keepSignedIn, onKeepSignedIn
         {/* Verification Form - Fixed to bottom */}
         <div className="flex-shrink-0 verification-form">
           <div className="bg-blue-500 px-6 py-2 shadow-xl">
-            <h2 className="font-bold text-white text-center font-poppins">Verification</h2>
+            <h2 className="font-bold text-white text-center font-poppins pt-5">Verification</h2>
 
             {/* Phone Number */}
             <div className="mb-4 mt-2 relative">
@@ -96,7 +96,7 @@ const Verification = ({ formData, otp, onOtpChange, keepSignedIn, onKeepSignedIn
             </button>
 
             {/* Alternative Link */}
-            <div className="text-center text-white text-sm font-inter">
+            <div className="text-center text-white text-sm font-inter pb-8">
               Code not working?{' '}
               <span className="text-cyan-300 font-medium cursor-pointer">Try another way</span>
             </div>

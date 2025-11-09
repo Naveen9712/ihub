@@ -10,7 +10,7 @@ const ImmigrationInfo = ({
   onBack 
 }) => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100 relative">
+    <div className="fixed-layout-container flex items-center justify-center bg-gray-100 relative">
       {/* Back Button */}
       <button
         onClick={onBack}
@@ -22,7 +22,7 @@ const ImmigrationInfo = ({
         </svg>
       </button>
 
-      <div className="w-full max-w-[380px] min-h-screen overflow-y-auto px-4 py-4">
+      <div className="w-full h-full overflow-y-auto  px-4 py-10">
         {/* Header */}
         <div className="text-center mb-6">
           <h1 className="text-1.5xl font-semibold text-blue-500 mb-4">Sign up</h1>
