@@ -1,0 +1,71 @@
+/* ChatOnboarding Component Styles */
+
+/* Smooth scroll behavior for chat container */
+.chat-container {
+    scroll-behavior: smooth;
+  }
+  
+  /* Fade in animation for messages */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .message-enter {
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  /* Typing indicator animation */
+  @keyframes bounce {
+    0%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-8px);
+    }
+  }
+  
+  .typing-dot {
+    animation: bounce 1.4s infinite ease-in-out;
+  }
+  
+  .typing-dot:nth-child(1) {
+    animation-delay: -0.32s;
+  }
+  
+  .typing-dot:nth-child(2) {
+    animation-delay: -0.16s;
+  }
+  
+  /* Button hover effects */
+  .response-button {
+    transition: all 0.2s ease;
+  }
+  
+  .response-button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Scrollbar styling */
+  .chat-messages::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .chat-messages::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .chat-messages::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 3px;
+  }
+  
+  .chat-messages::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+  }

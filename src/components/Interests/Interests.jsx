@@ -33,7 +33,7 @@ const Interests = ({
         </svg>
       </button>
 
-      <div className="w-full h-full overflow-y-auto px-4 py-4">
+      <div className="w-full h-full overflow-y-auto px-4 py-4 pt-18">
         {/* Header */}
         <div className="text-center mb-6">
           <h1 className="text-2xl font-semibold text-blue-500 mb-4">Sign up</h1>
