@@ -485,10 +485,12 @@ const ChatOnboarding = ({
                   <div className={`max-w-[85%] ${message.type === 'user' ? 'order-2' : 'order-1'}`}>
                     {message.type === 'bot' && !message.isSubtext && (
                       <div className="flex items-start gap-2 mb-1">
-                        <div className="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center flex-shrink-0">
-                          <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
-                          </svg>
+                        <div className="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center flex-shrink-0 overflow-hidden">
+                          <img 
+                            src="/images/ihub-favicon.jpg" 
+                            alt="Chat icon" 
+                            className="w-full h-full object-cover"
+                          />
                         </div>
                       </div>
                     )}
@@ -512,10 +514,12 @@ const ChatOnboarding = ({
             {isTyping && (
               <div className="flex justify-start">
                 <div className="flex items-start gap-2">
-                  <div className="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center">
-                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
-                    </svg>
+                  <div className="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center overflow-hidden">
+                    <img 
+                      src="/images/ihub-favicon.jpg" 
+                      alt="Chat icon" 
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div className="bg-white rounded-2xl px-4 py-3 shadow-sm">
                     <div className="flex gap-1">

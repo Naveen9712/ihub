@@ -208,8 +208,6 @@ const ImmiHubOnboarding = () => {
         <ImmigrationInfo 
           documents={documents}
           onUploadDocument={handleUploadDocument}
-          deadlines={deadlines}
-          onDeadlineChange={handleDeadlineChange}
           onNext={handleNext}
           onBack={handleBack}
         />
