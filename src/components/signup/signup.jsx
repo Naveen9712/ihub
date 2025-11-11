@@ -14,10 +14,10 @@ const Signup = ({ formData, onInputChange, onNext, onBack }) => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
         </svg>
       </button>
-      <div className="w-100 h-150 relative">
+      <div className="w-full h-full min-h-screen relative flex flex-col">
         {/* Image */}
         <div className="px-6 mt-4 mb-3 flex-shrink-0">
-          <div className="w-85 h-55 relative flex items-center justify-center">
+          <div className="w-full relative flex items-center justify-center">
             <img 
               src="/images/immi-image2.png" 
               alt="ImmiHub"

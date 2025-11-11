@@ -26,34 +26,30 @@ html, body {
   justify-content: center;
 }
 
-/* Fixed layout container for all pages */
+/* Responsive mobile container for all pages */
 .fixed-layout-container {
-  width: 402px !important;
-  height: 874px !important;
-  max-width: 402px !important;
-  max-height: 874px !important;
-  min-width: 402px !important;
-  min-height: 874px !important;
-  overflow: hidden;
+  width: 100%;
+  min-height: 100vh;
+  max-width: 100%;
   position: relative;
-  /* Prevent scaling */
-  transform: scale(1);
-  transform-origin: top center;
+  overflow-x: hidden;
+  /* Ensure proper mobile rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Prevent font scaling - ensure fonts remain constant */
-.fixed-layout-container {
-  font-size: 16px;
-  -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%;
+/* Responsive mobile styles - ensure proper scaling on all mobile devices */
+@media (max-width: 480px) {
+  .fixed-layout-container {
+    width: 100%;
+    min-height: 100vh;
+  }
 }
 
-/* Prevent any scaling on child elements */
-.fixed-layout-container * {
-  -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%;
+@media (min-width: 481px) {
+  /* For larger mobile devices and tablets, limit max width */
+  .fixed-layout-container {
+    max-width: 480px;
+    margin: 0 auto;
+  }
 }

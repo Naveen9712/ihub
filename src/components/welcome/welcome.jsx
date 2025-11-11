@@ -4,7 +4,7 @@ import './welcome.css';
 const Welcome = ({ onNext }) => {
   return (
     <div className="fixed-layout-container bg-gradient-to-b from-blue-200 via-blue-300 to-blue-500 flex items-center justify-center bg-gray-100">
-      <div className="w-100 h-150 relative overflow-hidden">
+      <div className="w-full h-full min-h-screen relative overflow-hidden flex flex-col">
         {/* Image */}
         <div className="flex items-center justify-center mt-8 px-6">
           <div className="w-full relative">
@@ -17,7 +17,7 @@ const Welcome = ({ onNext }) => {
         </div>
 
         {/* Welcome Content */}
-        <div className="absolute left-0 right-0 px-8 pb-1">
+        <div className="absolute left-0 right-0 bottom-0 px-8 pb-8">
           <div className="text-left mb-8">
             <h1 className="text-3xl font-medium text-white mb-2 font-poppins">Welcome <br/>to Immihub</h1>
             

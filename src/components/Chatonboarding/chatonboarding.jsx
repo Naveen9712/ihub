@@ -430,7 +430,7 @@ const ChatOnboarding = ({
   const buttons = getButtonOptions();
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100 relative">
+    <div className="fixed-layout-container flex items-center justify-center bg-gray-100 relative">
       {/* Back Button */}
       <button
         onClick={onBack}
@@ -442,7 +442,7 @@ const ChatOnboarding = ({
         </svg>
       </button>
 
-      <div className="w-full max-w-[380px] min-h-screen flex flex-col">
+      <div className="w-full min-h-screen flex flex-col">
         {/* Header */}
         <div className="flex-shrink-0 px-4 py-4 bg-gray-100">
           <div className="flex items-center justify-between mb-4">
@@ -538,7 +538,7 @@ const ChatOnboarding = ({
 
         {/* Response Buttons */}
         {showButtons && !isTyping && (
-          <div className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[380px] bg-white border-t border-gray-200 px-4 py-4 shadow-lg">
+          <div className="fixed bottom-0 left-0 right-0 w-full bg-white border-t border-gray-200 px-4 py-4 shadow-lg">
             <div className={`grid ${buttons.length > 2 ? 'grid-cols-2' : 'grid-cols-1'} gap-3`}>
               {buttons.map((button, index) => (
                 <button
@@ -555,7 +555,7 @@ const ChatOnboarding = ({
 
         {/* Next Button (Final) */}
         {showNextButton && (
-          <div className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[380px] bg-white border-t border-gray-200 px-4 py-4 shadow-lg">
+          <div className="fixed bottom-0 left-0 right-0 w-full bg-white border-t border-gray-200 px-4 py-4 shadow-lg">
             <button
               onClick={() => onComplete(responses)}
               className="w-full bg-blue-500 text-white text-lg font-semibold py-3.5 rounded-full hover:bg-blue-600 transition-colors font-inter"
