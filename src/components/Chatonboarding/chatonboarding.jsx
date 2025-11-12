@@ -538,13 +538,13 @@ const ChatOnboarding = ({
 
         {/* Response Buttons */}
         {showButtons && !isTyping && (
-          <div className="fixed bottom-0 left-0 right-0 w-full bg-white border-t border-gray-200 px-4 py-4 shadow-lg">
+          <div className="bottom-0 left-0 right-0 w-full bg-white border-t border-gray-200 px-4 py-4 shadow-lg">
             <div className={`grid ${buttons.length > 2 ? 'grid-cols-2' : 'grid-cols-1'} gap-3`}>
               {buttons.map((button, index) => (
                 <button
                   key={index}
                   onClick={() => handleButtonResponse(button)}
-                  className="bg-white border-2 border-blue-500 text-blue-500 font-semibold py-3 rounded-full hover:bg-blue-50 transition-colors text-sm font-inter"
+                  className="bg-white border-2 border-blue-500 text-blue-500 font-semibold py-3 px-4 rounded-full hover:bg-blue-50 transition-colors text-sm font-inter"
                 >
                   {button}
                 </button>
